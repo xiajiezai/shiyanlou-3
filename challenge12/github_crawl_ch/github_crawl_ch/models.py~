@@ -4,7 +4,6 @@ from sqlalchemy import Column, String, Integer, DateTime
 
 
 engine = create_engine('mysql+mysqldb://root@localhost:3306/shiyanlougithub?charset=utf8')
-#dialect+driver://username:password@host:port/database. http://docs.sqlalchemy.org/en/latest/core/engines.html
 #connect to database. shiyanlougithub is the name of database, default port:3306
 Base = declarative_base()
 
