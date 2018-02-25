@@ -5,7 +5,8 @@ from multi_page.items import MultiPageItem
 
 class MultipageSpider(scrapy.Spider):
     name = 'multipage'
-    # allowed_domains = ['shiyanlou.com/courses'] keep this line and you will get no results
+    # allowed_domains = ['shiyanlou.com/courses'] no results
+    # allowed_domains = ['shiyanlou.com'] OK, leaving out this line is also OK 
     start_urls = ['https://shiyanlou.com/courses/']
 
     def parse(self, response):
